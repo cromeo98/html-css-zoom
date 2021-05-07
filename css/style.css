@@ -7,8 +7,11 @@
 
 /* header */
 header{
-    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
     background-color: black;
+    padding: 5px;
 }
 
 nav button{
