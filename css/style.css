@@ -7,6 +7,7 @@
 
 .flexbox{
     display: flex;
+    align-items: center;
 }
 
 .pos-relative{
@@ -15,6 +16,16 @@
 
 body{
     font-family: 'Lato', sans-serif;
+}
+
+.clear-fix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.inline-b{
+    display: inline-block;
 }
 /* header */
 header{
@@ -38,9 +49,10 @@ main{
 }
 main .container{
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 162px);
     background-color: black;
     overflow: auto;
+    border-bottom: 2px solid black;
 }
 .row{
     flex-wrap: wrap;
@@ -70,8 +82,60 @@ main .container{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* footer */
+footer{
+    height: 80px;
+    background-color: #222222;
+}
+
+footer .container{
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#mic{
+    margin-right: 20px;
+}
+
+.text{
+    font-size: 15px;
+}
+
+.icon{
+    text-align: center;
+    font-size: 30px;
+}
+
+.up-arrow{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.buttons-box{
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.buttons-box div{
+    padding: 0 5px;
+}
+
+#share-screen .icon{
+    color: #4bc800;
+}
+
+.end-meeting{
+    height: 100%;
+    background-color: #4a4a4a;
+    line-height: 80px;
+    padding: 0 15px;
+    color: #ca0e08;
+}
+
 /* debug */
 /* .debug main{
     /* height: 100vh;
     background-color: blueviolet;
-} */ */
+} */ 
